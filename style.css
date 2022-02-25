@@ -1,0 +1,74 @@
+@font-face {
+    font-family:'GroteskRemixMonospace';
+    src: url('./GroteskRemixMonospace-variable.ttf') format("truetype");
+}
+body {
+    font-family:'GroteskRemixMonospace', monospace;    
+    margin: 0;
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+h1,h2{
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 1em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    font-weight: normal;
+    display: inline-block;
+}
+h2{
+    font-size: 1em;
+}
+.about-link{
+    display: none;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.note {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    padding: .5rem;
+    font-size: .8rem;
+    background-color: yellow;
+}
+
+.signup {
+    width: 50vw;
+/*    height: 60vh;*/
+}
+iframe {
+    width: 100%;
+    height: 70vh;
+    border: solid 2px black;
+    overflow: auto;
+}
+#info{
+    margin-top: 1rem;
+    display: flex;
+}
+#info p{
+    margin-right: 1em;
+}
+
+@media only screen and (max-width: 800px) {
+   .wrapper {
+       flex-direction: column;
+   }
+   .signup{
+        width: 100%;
+        height: auto;
+    }
+    #info{
+        display: block;
+    }
+    .about-link{
+        display: inline-block;
+    }
+  }

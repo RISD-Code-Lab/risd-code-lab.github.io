@@ -1,1 +1,1 @@
-# risd-code-lab
+# codelab-2022
